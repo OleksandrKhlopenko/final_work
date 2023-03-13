@@ -1,0 +1,169 @@
+.products {
+    margin-bottom: 100px;
+  }
+  
+  @media (max-width: 1200px) {
+    .products {
+      margin-bottom: 70px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .products {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .productsTitle {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  @media (max-width: 1200px) {
+    .productsTitle {
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .productsTitle {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .productsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 1200px) {
+    .productsGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .products__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1650px;
+  }
+  .productsBottom {
+    text-align: center;
+  }
+  
+  .products img {
+    display: block;
+    width: 100%;
+  }
+  
+  .product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+  }
+  
+  .productBody {
+    padding-top: 16px;
+  }
+  
+   h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+     h3 {
+      font-size: 16px;
+    }
+  }
+  
+  .productsImage {
+    position: relative;
+  }
+  
+  .productsImageBlock {
+    display: block;
+  }
+  
+  .addToWishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    &:hover{
+        background-color: #000;
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      &:hover{
+          color: #fff;
+      }
+  }
+  
+  }
+
+  .btnOutlinePrimary {
+   display: inline-block;
+  font-weight: 500;
+  color: #666666;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.6125rem 1.875rem;
+  font-size: 1rem;
+  line-height: 1.4375;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #000000;
+   border-color: #000000;
+  
+
+    &:hover{
+      color: #fff;
+      background-color: #000000;
+      border-color: #000000;
+    }
+    }
+  
+  
+
+  
+   .btnOutlinePrimary:focus,
+  .btnOutlinePrimary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .btnOutlinePrimary.disabled,
+  .btnOutlinePrimary:disabled {
+    color: #000000;
+    background-color: transparent;
+  }
+  

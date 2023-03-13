@@ -1,3 +1,21 @@
+.btnDark {
+  display: inline-block;
+  font-weight: 500;
+  color: #666666;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.6125rem 1.875rem;
+  font-size: 1rem;
+  line-height: 1.4375;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .btnDark:hover {
     color: #666666;
     text-decoration: none;
@@ -26,16 +44,15 @@
     margin-bottom: 100px;
   }
   
-  @media (max-width: 1200px) {
-    .banner {
-      margin-bottom: 70px;
-    }
-  }
   
-  @media (max-width: 768px) {
-    .banner {
-      margin-bottom: 50px;
-    }
+  
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1650px;
   }
   
   .bannerWrapper {
@@ -81,4 +98,15 @@
     .bannerTitle {
       font-size: 30px;
     }
+}
+@media (max-width: 1200px) {
+  .banner {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin-bottom: 50px;
+  }
 }

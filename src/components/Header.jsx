@@ -1,19 +1,21 @@
 import styles from "../components/Header.module.scss";
 import blackLogo from "../img/logo-black.png";
 
+
+
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div classNAme={styles.container}>
-        <div classNAme={styles.headerWrapper}>
+      <div className={styles.contain}>
+        <div className={styles.headerWrapper}>
           <a href="/">
             <img src={blackLogo} alt="Logotype" />
           </a>
           <div className={styles.navbar}>
             <ul>
               <li>
-                <a href="/" classNAme={styles.navbarIcon}>
-                  <svg
+                <a href="/" className={styles.navbarIcon}>
+                  <svg className={styles.svg}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -30,8 +32,8 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="/" classNAme={styles.navbarIcon}>
-                  <svg
+                <a href="/" className={styles.navbarIcon}>
+                  <svg className={styles.svg}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -46,7 +48,7 @@ const Header = () => {
                     />
                   </svg>
 
-                  <span classNAme={styles.number}>2</span>
+                  <span className={styles.number}>2</span>
                 </a>
               </li>
             </ul>
