@@ -25,7 +25,7 @@ h2 {
     font-size: 26px;
   }
 }
-.container {
+.contain {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -46,7 +46,7 @@ h2 {
 }
 
 
-ul {
+.navbar ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -54,22 +54,29 @@ ul {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-}
+
 
 .navbarIcon {
   position: relative;
   display: block;
   padding: 0 10px;
-}
+  
+  svg {
+    width: 25px;
+    height: 25px;
+   
 
-.svg {
-  width: 25px;
-  height: 25px;
+  }
+}
+}
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: visible;
 }
 
 .number {
   position: absolute;
-  top: -40px;
+  top: -10px;
   right: 2px;
   font-size: 12px;
   background-color: #da3f3f;

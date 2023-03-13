@@ -1,0 +1,133 @@
+.category {
+    margin-bottom: 100px;
+  }
+  
+  @media (max-width: 1200px) {
+    .category {
+      margin-bottom: 70px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .category {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .categoryTitle {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  @media (max-width: 1200px) {
+    .categoryTitle {
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .categoryTitle {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+  @media (max-width: 1200px) {
+    .categoryGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .categoryGrid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1650px;
+  }
+
+  .categoryItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+  }
+  
+  .categoryOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+  }
+  .btnbtnDark {
+    display: inline-block;
+    font-weight: 500;
+    color: #666666;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.6125rem 1.875rem;
+    font-size: 1rem;
+    line-height: 1.4375;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &:hover {
+        color: #666666;
+        text-decoration: none;
+      }
+  }
+  
+  
+  
+  .btnbtnDark.disabled,
+ .btnbtnDark:disabled {
+    opacity: 0.65;
+    box-shadow: none;
+    pointer-events: none;
+    cursor: none;
+  }
+  
+  .btnbtnDark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    box-shadow: none;
+  }
+  
+  .btnbtnDark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+  }
+  
+  .btnbtnDark.disabled,
+  .btnDark:disabled {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  
+ 
