@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import styles from "../components/Products.module.scss";
-import product1 from "../img/product-01.jpg"
-import product2 from "../img/product-02.jpg"
-import product3 from "../img/product-03.jpg"
-import product4 from "../img/product-04.jpg"
-import product5 from "../img/product-05.jpg"
-import product6 from "../img/product-06.jpg"
-import product7 from "../img/product-07.jpg"
-import product8 from "../img/product-08.jpg"
 
+import product1 from "../img/product-01.jpg";
+import product2 from "../img/product-02.jpg";
+import product3 from "../img/product-03.jpg";
+import product4 from "../img/product-04.jpg";
+import product5 from "../img/product-05.jpg";
+import product6 from "../img/product-06.jpg";
+import product7 from "../img/product-07.jpg";
+import product8 from "../img/product-08.jpg";
 
 const Products = () => {
   return (
@@ -16,7 +17,7 @@ const Products = () => {
         <h2 className={styles.productsTitle}>This Week's Highlights</h2>
 
         <div className={styles.productsGrid}>
-        <div className={styles.product}>
+          <div className={styles.product}>
             <div class={styles.productsImage}>
               <a href="/" className={styles.productsImageBlock}>
                 <img src={product1} alt="Product 01" />
@@ -266,7 +267,9 @@ const Products = () => {
         </div>
 
         <div className={styles.productsBottom}>
-          <a href="/" className={styles.btnOutlinePrimary}> Shop Now </a>
+          <Link to="/wishlist" className={styles.btnOutlinePrimary}>
+            Shop Now
+          </Link>
         </div>
       </div>
     </section>

@@ -6,11 +6,9 @@ import Wishlist from "./pages/Wishlist";
 function App() {
   return (
     <div className={styles.App}>
-
-      
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/wishlist" element={<Wishlist/>}/>
+        <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
     </div>
   );

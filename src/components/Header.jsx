@@ -1,8 +1,6 @@
 import styles from "../components/Header.module.scss";
 import blackLogo from "../img/logo-black.png";
 
-
-
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -15,7 +13,8 @@ const Header = () => {
             <ul>
               <li>
                 <a href="/" className={styles.navbarIcon}>
-                  <svg className={styles.svg}
+                  <svg
+                    className={styles.svg}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -33,7 +32,8 @@ const Header = () => {
               </li>
               <li>
                 <a href="/" className={styles.navbarIcon}>
-                  <svg className={styles.svg}
+                  <svg
+                    className={styles.svg}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
