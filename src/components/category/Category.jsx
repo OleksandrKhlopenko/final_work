@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "../components/Category.module.scss";
-import banner20 from "../img/banner-20.jpg";
-import banner21 from "../img/banner-21.jpg";
-import banner22 from "../img/banner-22.jpg";
+import { Link } from "react-router-dom";
+import styles from "../category/Category.module.scss";
+import banner20 from "../../img/banner-20.jpg";
+import banner21 from "../../img/banner-21.jpg";
+import banner22 from "../../img/banner-22.jpg";
 
 const Category = () => {
   return (
@@ -15,9 +15,9 @@ const Category = () => {
               <img src={banner20} alt="Glasses" />
 
               <div className={styles.categoryOverlay}>
-                <a href="/" className={styles.btnbtnDark}>
+                <Link to="/Wishlist" className={styles.btnbtnDark}>
                   Glasses
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -25,9 +25,9 @@ const Category = () => {
               <img src={banner21} alt="Sneakers" />
 
               <div className={styles.categoryOverlay}>
-                <a href="/" className={styles.btnbtnDark}>
+                <Link to="/Wishlist" className={styles.btnbtnDark}>
                   Sneakers
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -35,9 +35,9 @@ const Category = () => {
               <img src={banner22} alt="Handbags" />
 
               <div className={styles.categoryOverlay}>
-                <a href="/" className={styles.btnbtnDark}>
+                <Link to="/Wishlist" className={styles.btnbtnDark}>
                   Handbags
-                </a>
+                </Link>
               </div>
             </div>
           </div>

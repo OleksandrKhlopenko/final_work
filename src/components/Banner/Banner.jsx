@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import styles from "../components/Banner.module.scss";
-import homeImage from "../img/image-home-07.jpg";
+import styles from "../components/../Banner/Banner.module.scss";
+import homeImage from "../../img/image-home-07.jpg";
 
 const Banner = () => {
   return (

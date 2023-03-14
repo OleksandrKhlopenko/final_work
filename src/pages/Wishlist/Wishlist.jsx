@@ -1,5 +1,5 @@
-import styles from "../pages/Wishlist.module.scss";
-import image07 from "../img/product-07.jpg";
+import styles from "../pages/../Wishlist/Wishlist.module.scss";
+import image07 from "../../img/product-07.jpg"
 const Wishlist = () => {
   return (
     <div>
