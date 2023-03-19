@@ -1,15 +1,34 @@
-import styles from "../Products.module.scss"
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { store } from "../../WishlistConrext/WishlistContext";
 import product1 from "../../../img/product-01.jpg";
+import styles from "../Products.module.scss";
 
-const FirstProductCard = () => {
+const FirstProductCard = ({ id, name, price, image }) => {
+  const { dispatch } = useContext(store);
+
+  const handleAddToWishlist = () => {
+    dispatch({
+      type: "ADD_TO_WISHLIST",
+      payload: { id, name, price, image },
+    });
+  };
   return (
-    < div className={styles.product}>
+    <div className={styles.product}>
       <div class={styles.productsImage}>
-        <a href="/" className={styles.productsImageBlock}>
+        <Link
+          to="/wishlist"
+          onClick={() => handleAddToWishlist({ id, name, price, image })}
+          className={styles.productsImageBlock}
+        >
           <img src={product1} alt="Product 01" />
-        </a>
+        </Link>
 
-        <a href="/" className={styles.addToWishlist}>
+        <Link
+          onClick={() => handleAddToWishlist({ id, name, price, image })}
+          to="/wishlist"
+          className={styles.addToWishlist}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -24,16 +43,19 @@ const FirstProductCard = () => {
               d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
             />
           </svg>
-        </a>
+        </Link>
       </div>
       <div className={styles.ProductBody}>
         <h3>
-          <a href="/">Flowers cotton dress</a>
+          <Link
+            onClick={() => handleAddToWishlist({ id, name, price, image })}
+            to="/wishlist">
+            Flowers cotton dress
+          </Link>
         </h3>
         <p>$79.00</p>
       </div>
-      </div>
-  
+    </div>
   );
 };
 
