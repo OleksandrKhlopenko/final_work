@@ -1,5 +1,5 @@
-import WihlistCard from "../../components/Wishlist/WihlistCard";
-import WihlistCard2 from "../../components/Wishlist/WishlistCard2";
+import WishlistCard from "../../components/Wishlist/WishlistCard";
+
 import styles from "../pages/../Wishlist/Wishlist.module.scss";
 
 const Wishlist = () => {
@@ -7,8 +7,8 @@ const Wishlist = () => {
     <div>
       <div className={styles.container}>
         <h2 className={styles.wishlistTitle}>Wishlist</h2>
-        <WihlistCard/>
-        <WihlistCard2/>
+        <WishlistCard/>
+        <WishlistCard/>
         
       </div>
     </div>

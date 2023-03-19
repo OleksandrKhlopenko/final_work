@@ -1,5 +1,5 @@
 import ItemDeleteButton from "./Buttons/ItemDeleteButton"
-import ItemButton from "./Buttons/ItemButton"
+import Button from "./Buttons/Button"
 import styles from "../../pages/Wishlist/Wishlist.module.scss"
 import image07 from "../../img/product-07.jpg"
 
@@ -23,7 +23,7 @@ const WihlistCard = () => {
               </div>
             </div>
             <div className={styles.itemButtons}>
-             <ItemButton/>
+             <Button/>
             </div>
           </div>
   )
